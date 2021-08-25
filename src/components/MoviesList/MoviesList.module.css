@@ -1,0 +1,200 @@
+.MoviesList {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.TabRow {
+    background-color: var(--text-color);
+    align-items: flex-end;
+    margin-right: 0!important;
+    margin-left: 0!important;
+    height: 8%;
+    min-height: 60px;
+}
+.Tab {
+    padding: 15px;
+    background-color: var(--inactive);
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+.MenuCol {
+    background-color: black;
+    height: 100%;
+    padding-left: 20px!important;
+    padding-right: 5px!important;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column-reverse;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+@media screen and (max-width: 767px) {
+    .TabCol {
+        display: none;
+    }
+    .TriangleCol {
+        display: none;
+    }
+}
+@media screen and (min-width: 767px) {
+    .Tab {
+        padding: 6px;
+    }
+    .MenuCol {
+        display: none;
+    }
+}
+@media screen and (min-width: 880px) {
+    .Tab {
+        padding: 15px;
+    }
+}
+.Tab:hover {
+    cursor: pointer;
+}
+.ActiveTab {
+    background-color: black;
+}
+.TriangleCol {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    height: 100%;
+    position: relative;
+    min-width: 60px;
+}
+.Triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid black;
+    border-left: 75px solid transparent;
+    position: absolute;
+    right: 0;
+}
+.SearchCol {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.SearchTab {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.SearchInput {
+    padding: 8px;
+    border-radius: 10px;
+    border-color: black;
+    outline: none;
+}
+.SearchInput:focus {
+    outline: none;
+}
+.SearchButton {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--inactive)!important;
+    border-color: var(--inactive)!important;
+}
+.MovieCarouselRow {
+    height: 77%;
+    width: 100%;
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+.MovieCarouselWrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
+.PageWrap {
+    height: 15%;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.PagesRow {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.PageNo {
+    border: 2px solid var(--text-color);
+    margin-left: 7px;
+    margin-right: 8px;
+    margin-top: 16px!important;
+    padding: 0!important;
+    border-radius: 5px;
+    min-width: 45px;
+    min-height: 45px;
+    line-height: 45px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@media screen and (max-width: 576px) {
+    .PageNo {
+        margin-top: 0!important;
+        min-width: 30px;
+        min-height: 30px;
+        line-height: 30px;
+    }
+    .MobileDisplayToggle {
+        display: none;
+    }
+}
+.PageNo.ActivePage {
+    background-color: #0dcaf0;
+}
+
+.PageNo:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px var(--text-color-hover);
+}
+.Symbol {
+    font-weight: bold;
+}
+.EllipsisCol {
+    padding-top: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.MenuIcon {
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    padding-top: 5px;
+    line-height: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.MenuIcon:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 0px var(--text-color-hover);
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #f2f2f2; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #f2f2f2; 
+}

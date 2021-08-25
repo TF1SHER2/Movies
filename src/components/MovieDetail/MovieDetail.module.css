@@ -1,0 +1,68 @@
+.MovieDetail {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.DetailsWrap {
+    padding-right: 20px;
+}
+
+.MovieDetailRow {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.MovieImageCol {
+    text-align: center;
+}
+.MovieImage {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.Back {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    padding: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.BackText {
+    text-decoration: underline;
+}
+.Back:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+.Symbol {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .MovieImage {
+        height: 50vh;
+        padding-top: 45px;
+    }
+    .DetailsWrap {
+        padding-left: 20px;
+        height: 45vh;
+        overflow-y: scroll;
+    }
+}
+
+.Title {
+    font-size: 32px;
+    padding-bottom: 32px;
+    font-weight: 600;
+}
+.Tagline {
+    font-size: 24px;
+    padding-bottom: 24px;
+}
+.pb1 {
+    padding-bottom: 16px;
+}
