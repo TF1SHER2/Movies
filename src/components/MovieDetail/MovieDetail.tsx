@@ -35,7 +35,7 @@ const MovieDetail = (): JSX.Element => {
     <div className={styles.MovieDetail}>
       {movie && (
         <>
-          <a href={process.env.PUBLIC_URL + "/moviesList"} className={styles.Back}>
+          <a href={"/moviesList"} className={styles.Back}>
             &lt;&nbsp;
             <span className={styles.BackText}>Back</span>
           </a>
