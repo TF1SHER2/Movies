@@ -27,7 +27,6 @@ const MovieDetail = (): JSX.Element => {
   const getPosterPathImgSrc: (movie: GetMovieReturn) => string = (movie: GetMovieReturn) => {
     let src = "";
     if (movie.poster_path) {
-      console.log(movie.poster_path);
       src = 'https://image.tmdb.org/t/p/original/' + movie.poster_path;
     }
     return src;
@@ -41,7 +40,7 @@ const MovieDetail = (): JSX.Element => {
             <span className={styles.BackText}>Back</span>
           </a>
           <Row className={styles.MovieDetailRow}>
-            <Col xs={12} sm className={styles.MovieImageCol}>
+            <Col xs={12} md={4} sm className={styles.MovieImageCol}>
               <img className={styles.MovieImage} src={getPosterPathImgSrc(movie)} />
             </Col>
             <Col>
