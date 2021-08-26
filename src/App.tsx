@@ -10,15 +10,15 @@ function App() {
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + "/"}>
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path={process.env.PUBLIC_URL + "/moviesList"}>
+          <Route path="/moviesList">
             <MoviesList
               type="popular"
             />
           </Route>
-          <Route exact path={process.env.PUBLIC_URL + "/movie/:id"}>
+          <Route path="/movie/:id">
             <MovieDetail />
           </Route>
         </Switch>
