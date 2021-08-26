@@ -34,7 +34,7 @@ const MovieCarousel = ({
       <Row className={styles.PreviewRow}>
         {map(curSlice, (movie: Movie, index) => {return(
           <Col xs={6} md={4} lg={3} xl={2} key={movie.id}>
-            <a href={"/movie/" + movie.id} className={styles.MovieCard}>
+            <a href={process.env.PUBLIC_URL + "/movie/" + movie.id} className={styles.MovieCard}>
               <div className={styles.MovieImageWrap}>
                 <img className={styles.MovieImage} src={getPosterPathImgSrc(movie)} />
               </div>

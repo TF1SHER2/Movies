@@ -13,12 +13,12 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/moviesList">
+          <Route exact path="/moviesList">
             <MoviesList
               type="popular"
             />
           </Route>
-          <Route path="/movie/:id">
+          <Route exact path="/movie/:id">
             <MovieDetail />
           </Route>
         </Switch>
