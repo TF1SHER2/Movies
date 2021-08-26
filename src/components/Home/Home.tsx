@@ -6,7 +6,7 @@ const Home = () => (
   <div className={styles.Home}>
     <div className={styles.Logo}></div>
     <div className={styles.ButtonRow}>
-      <Button href={process.env.PUBLIC_URL + "/moviesList"} variant="info" className={styles.NavButton}>View Popular Movies!</Button>
+      <Button href={"/moviesList"} variant="info" className={styles.NavButton}>View Popular Movies!</Button>
     </div>
   </div>
 );
